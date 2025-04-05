@@ -14,19 +14,11 @@ public static int[] recaman(int n) {
 
 int[] array = new int[n];
 ArrayList<Integer> arr = new ArrayList<Integer>();
-recamanMaker(n, arr, array);
-return array;
-}
-
-
-public static void recamanMaker(int n, ArrayList<Integer> arr, int[] array){
-
-
-System.out.println(recHelper(n, arr));
-
+recHelper(n, arr);
 for (int i = 0; i<array.length; i++){
 	array[i] = arr.get(i);
 }
+return array;
 }
 
 
