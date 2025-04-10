@@ -27,18 +27,12 @@ if (n ==0){
 	return 0;
 }
 int temp = recHelper(n-1, list)-n;
-System.out.println(n + " this is n current");
-System.out.println(temp + " this is temp current");
 if (temp>0&&!list.contains(temp)){
-	System.out.println(n + " this is n");
-	System.out.println(temp + " this is temp sub");
 	list.add(temp);
 }
 else{
 	temp = temp+2*n;
 	if (!list.contains(temp)){
-		System.out.println(n + " this is n");
-		System.out.println(temp + " this is temp add");
 		list.add(temp);
 	}
 }
